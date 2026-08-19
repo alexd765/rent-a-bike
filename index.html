@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent-a-Bike Germany</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1d1d1d;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      opacity: 0.75;
+    }
+
+    .hero {
+      min-height: 520px;
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.45),
+          rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=85");
+
+      background-size: cover;
+      background-position: center;
+
+      color: white;
+
+      display: flex;
+      align-items: center;
+
+      padding: 70px 8%;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.35rem;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffffff;
+      color: #111;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .button:hover {
+      background: #eeeeee;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      max-width: 900px;
+      font-size: 1.2rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .features {
+      background: #f5f5f5;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 35px;
+    }
+
+    .feature {
+      background: white;
+      padding: 35px;
+      border-radius: 6px;
+    }
+
+    .feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .process {
+      text-align: center;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: 45px auto 0;
+    }
+
+    .step-number {
+      width: 55px;
+      height: 55px;
+      background: #111;
+      color: white;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .reserve {
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .reserve p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+    }
+
+    .reserve .button {
+      min-width: 150px;
+    }
+
+    footer {
+      background: #080808;
+      color: #aaa;
+      padding: 35px 8%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .feature-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    Rent-a-Bike Germany
+  </div>
+
+  <nav>
+    <a href="#bikes">Our Bikes</a>
+    <a href="#how">How It Works</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+
+</header>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Your BMW.<br>Your Road.</h1>
+
+    <p>
+      Over 200 current-model-year BMW motorcycles,
+      ready for your next journey.
+    </p>
+
+    <a href="#reserve" class="button">
+      Reserve a Bike
+    </a>
+
+    <a href="#how" class="button">
+      How It Works
+    </a>
+
+  </div>
+
+</section>
+
+
+<section id="bikes">
+
+  <h2>A BMW for every kind of rider.</h2>
+
+  <div class="intro">
+
+    <p>
+      With more than
+      <span class="highlight">
+        200 current-model-year BMW motorcycles
+      </span>,
+      Rent-a-Bike Germany has a bike for almost every kind of rider.
+    </p>
+
+    <br>
+
+    <p>
+      Whether you want the razor-sharp handling and exhilarating
+      power of a superbike, the versatility of an adventure bike,
+      or the comfort and refinement of a Grand Tourer,
+      we have a BMW motorcycle for you.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="features">
+
+  <h2>Everything you need. Nothing you don't.</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+      <h3>200+ BMW Motorcycles</h3>
+      <p>
+        Choose from a large fleet of current-model-year
+        BMW motorcycles.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Fully Insured</h3>
+      <p>
+        Every motorcycle comes fully insured,
+        so you can concentrate on enjoying the ride.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Easy Reservations</h3>
+      <p>
+        Once registered, reserve your motorcycle using
+        WhatsApp, Sienne our friendly AI chatbot, or email.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="how" class="process">
+
+  <h2>Nothing could be simpler.</h2>
+
+  <div class="process-grid">
+
+    <div>
+      <div class="step-number">1</div>
+      <h3>Sign Up</h3>
+      <p>
+        Create your account.
+      </p>
+    </div>
+
+    <div>
+      <div class="step-number">2</div>
+      <h3>Provide Documents</h3>
+      <p>
+        Submit your licence and required documentation.
+      </p>
+    </div>
+
+    <div>
+      <div class="step-number">3</div>
+      <h3>Reserve</h3>
+      <p>
+        Choose your bike and reserve it instantly.
+      </p>
+    </div>
+
+    <div>
+      <div class="step-number">4</div>
+      <h3>Collect & Ride</h3>
+      <p>
+        Pick up your BMW and you're good to go.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="reserve" class="reserve">
+
+  <h2>Ready to ride?</h2>
+
+  <p>
+    Once you've signed up and provided your documentation,
+    reserving your next BMW couldn't be easier.
+  </p>
+
+  <a
+    class="button"
+    href="https://wa.me/"
+    target="_blank"
+  >
+    WhatsApp
+  </a>
+
+  <a
+    class="button"
+    href="#"
+  >
+    Ask Sienne
+  </a>
+
+  <a
+    class="button"
+    href="mailto:info@rent-a-bike-germany.de"
+  >
+    Email Us
+  </a>
+
+</section>
+
+
+<footer>
+
+  &copy; 2026 Rent-a-Bike Germany.
+  All rights reserved.
+
+</footer>
+
+
+</body>
+</html>
